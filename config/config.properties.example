@@ -1,0 +1,18 @@
+#For local development
+#databasename=Example_App
+#databasehost=localhost
+#databaseport=5432
+
+#For live system
+databasename=Example_App
+databasehost=external.host
+databaseport=5432
+
+#Always same user
+username=postgres # Change with login information from db server
+password=postgres # Change with login information from db server
+
+#AES-256 Encryption Key
+AESSecretKey=xxxxxxxxxxxx # Needs to be 256 bit!
+AESSecretSalt=xxxxxxxxxxxx
+AESSecretIV=xxxxxxxxxxxxx # Needs to be 16 characters!

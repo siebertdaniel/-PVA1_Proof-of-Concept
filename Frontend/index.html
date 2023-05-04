@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Praxisvalidierungsarbeit I - Index</title>
+    <script src="index.js"></script>
+</head>
+<body onload="checkLoginStatus()">
+<h1>Praxisvalidierungsarbeit I</h1>
+<h4>von Daniel Siebert</h4>
+<p>Hierbei handelt es sich um ein einfaches Frontend, welches dem User ermöglicht sich zu registrieren und
+    anzumelden.</p>
+<p>Die einzig andere Funktion ist es die user_id des Benutzers dazustellen.</p>
+<p>Auf dieser Website kann die Anmeldung durchgeführt werden.</p>
+<p>Aktueller Loginstatus:</p>
+<p id="loginStatus">Loginstatus</p>
+<form id="linkToRegister" action="/register.html">
+    <input type="submit" value="Registrieren"/>
+</form>
+<p id="infoText">Infotext</p>
+<form id="login-form">
+    <input type="email" name="username" id="username-field" class="login-form-field" placeholder="you@example.org">
+    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="******">
+    <input type="button" onclick="loginUser()" value="Login" id="login-form-submit">
+</form>
+<button id="logoutButton" onclick="logoutUser()">Abmelden</button>
+</body>
+</html>

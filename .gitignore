@@ -1,0 +1,4 @@
+.idea
+target/*
+config/config.properties
+/export_docker
